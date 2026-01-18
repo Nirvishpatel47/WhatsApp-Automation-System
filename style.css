@@ -1,0 +1,1590 @@
+/* UNIVERSAL ORDER CARD STYLES */
+.universal-order-card {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(6, 182, 212, 0.05));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.universal-order-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Header Section */
+.order-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.order-id-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.order-id-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.order-id-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: 'Courier New', monospace;
+}
+
+.order-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.order-badge.confirmed {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+    border: 1px solid #10b981;
+}
+
+.order-badge.pending {
+    background: rgba(251, 191, 36, 0.2);
+    color: #fbbf24;
+    border: 1px solid #fbbf24;
+}
+
+/* Customer Section */
+.customer-section {
+    margin-bottom: 20px;
+}
+
+.customer-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.customer-icon {
+    font-size: 1.2rem;
+}
+
+.customer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+.contact-icon {
+    font-size: 1rem;
+}
+
+.order-type-text {
+    flex: 1;
+    font-weight: 500;
+}
+
+.delivery-badge {
+    background: rgba(6, 182, 212, 0.2);
+    color: #06b6d4;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Custom Cake Section */
+.custom-cake-section {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.1));
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.custom-cake-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.cake-icon {
+    font-size: 1.5rem;
+}
+
+.cake-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--warning);
+}
+
+.cake-specs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.cake-spec {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.spec-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.spec-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.cake-message {
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 12px;
+}
+
+.message-icon {
+    font-size: 1.2rem;
+}
+
+.message-content {
+    flex: 1;
+}
+
+.message-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 4px;
+}
+
+.message-text {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--primary);
+}
+
+/* Items Section */
+.items-section {
+    margin-bottom: 16px;
+}
+
+.items-header {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+.item-name {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.item-size {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-qty {
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.item-price {
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+/* Total Section */
+.order-total-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(6, 182, 212, 0.15));
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.total-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.total-value {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--success);
+}
+
+/* Action Buttons */
+.order-actions {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 12px;
+}
+
+.btn-call, .btn-confirm {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+}
+
+.btn-call {
+    background: rgba(6, 182, 212, 0.2);
+    color: #06b6d4;
+    border: 1px solid #06b6d4;
+}
+
+.btn-call:hover {
+    background: rgba(6, 182, 212, 0.3);
+    transform: scale(1.02);
+}
+
+.btn-confirm {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+}
+
+.btn-confirm:hover {
+    background: linear-gradient(135deg, #059669, #047857);
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .order-actions {
+        grid-template-columns: 1fr;
+    }
+    
+    .cake-specs {
+        grid-template-columns: 1fr;
+    }
+}
+
+.custom-cake-order-card {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(239, 68, 68, 0.15) 100%);
+    border: 3px solid var(--warning);
+    border-radius: 20px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(245, 158, 11, 0.4);
+    transition: all 0.3s ease;
+}
+
+.custom-cake-order-card::before {
+    content: '🎂';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 120px;
+    opacity: 0.1;
+    transform: rotate(-15deg);
+}
+
+.custom-cake-order-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(245, 158, 11, 0.5);
+    border-color: #ef4444;
+}
+
+.custom-cake-header {
+    background: linear-gradient(90deg, var(--warning), #ef4444);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin: -28px -28px 20px -28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.cake-specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.cake-spec-item {
+    background: rgba(245, 158, 11, 0.1);
+    padding: 12px;
+    border-radius: 10px;
+    border-left: 4px solid var(--warning);
+}
+
+.cake-spec-label {
+    color: var(--secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.cake-spec-value {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.cake-message-box {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(245, 158, 11, 0.1));
+    border: 2px dashed var(--warning);
+    padding: 16px;
+    border-radius: 12px;
+    margin: 16px 0;
+}
+
+.cake-message-label {
+    color: var(--warning);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cake-message-text {
+    color: var(--text-light);
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+        .bakery-order-card {
+            background: linear-gradient(135deg, var(--card-bg) 0%, #1a2332 100%);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .bakery-order-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #f59e0b, #ef4444);
+        }
+
+        .bakery-order-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(245, 158, 11, 0.3);
+            border-color: #f59e0b;
+        }
+
+        .bakery-order-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .bakery-order-id {
+            font-size: 0.8rem;
+            color: var(--secondary);
+            font-family: monospace;
+            background: rgba(100, 116, 139, 0.2);
+            padding: 6px 12px;
+            border-radius: 8px;
+        }
+
+        .bakery-order-badge {
+            background: var(--warning);
+            color: #111827;
+            padding: 6px 14px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .bakery-order-badge.confirmed {
+            background: var(--success);
+            color: white;
+        }
+
+        /* Customer Info Section */
+        .customer-info-section {
+            background: rgba(6, 182, 212, 0.05);
+            border-left: 4px solid var(--primary);
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .customer-name-header {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .customer-detail-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .customer-detail-row:last-child {
+            border-bottom: none;
+        }
+
+        .customer-detail-icon {
+            font-size: 1.2rem;
+            min-width: 28px;
+            color: var(--primary);
+        }
+
+        .customer-detail-label {
+            color: var(--secondary);
+            font-weight: 600;
+            min-width: 70px;
+            font-size: 0.9rem;
+        }
+
+        .customer-detail-value {
+            color: var(--text-light);
+            font-weight: 600;
+            flex: 1;
+            word-break: break-word;
+        }
+
+        /* Order Type Badge */
+        .order-type-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #0891b2, #06b6d4);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+        }
+
+        /* Items Section */
+        .items-section {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 4px solid var(--success);
+            padding: 16px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .items-section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--success);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .item-card {
+            background: var(--bg-light);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.2s ease;
+        }
+
+        .item-card:hover {
+            background: var(--bg-dark);
+            border-color: var(--primary);
+        }
+
+        .item-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-name {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 6px;
+        }
+
+        .item-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+
+        .item-quantity {
+            color: var(--secondary);
+        }
+
+        .item-price {
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        /* Custom Cake Highlight */
+        .custom-cake-card {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(239, 68, 68, 0.1));
+            border: 2px solid var(--warning);
+        }
+
+        .custom-cake-icon {
+            font-size: 1.3rem;
+        }
+
+        .cake-detail {
+            background: rgba(245, 158, 11, 0.1);
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin: 6px 0;
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Total Price Section */
+        .bakery-total-price {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--success);
+            text-align: center;
+            padding: 16px;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 2px dashed var(--success);
+        }
+
+        /* Action Buttons */
+        .bakery-order-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .btn-bakery-confirm {
+            flex: 1;
+            background: linear-gradient(135deg, var(--success), #059669);
+            color: white;
+            border: none;
+            padding: 16px 24px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-bakery-confirm:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-bakery-call {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 16px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        .btn-bakery-call:hover {
+            background: var(--primary-dark);
+            transform: scale(1.05);
+        }
+
+        /* Delivery DateTime Badge */
+        .delivery-time-badge {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid var(--error);
+            color: #fecaca;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border);
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            
+            /* Remove default arrow for custom styling */
+            appearance: none; 
+            -webkit-appearance: none;
+            
+            /* Custom dropdown arrow (SVG data URL using the secondary color #64748b) */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2364748b'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 1.5em;
+            
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .form-group select:hover,
+        .form-group select:focus {
+            border-color: var(--primary); /* Highlight on hover/focus */
+            outline: none;
+            background-color: var(--bg-dark);
+        }
+
+        /* Style for the options list itself (varies by browser, but sets color) */
+        .form-group select option {
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            padding: 10px;
+        }
+        /* Styles for the custom dropdown button and options list */
+        .select-btn {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border);
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            border-radius: 6px;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            /* Added an arrow indicator */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .select-btn:hover {
+            border-color: var(--primary);
+            background-color: var(--bg-dark);
+        }
+        
+        .options {
+            position: absolute;
+            top: 100%; /* Position right below the button */
+            left: 0;
+            right: 0;
+            background-color: var(--bg-light);
+            border: 1px solid var(--border);
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            z-index: 10;
+            max-height: 200px;
+            overflow-y: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            margin-top: -1px; /* Overlap border with button for a clean look */
+        }
+        
+        .options.hidden {
+            display: none;
+        }
+
+        .options label {
+            display: block;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .options label:hover {
+            background-color: var(--bg-dark);
+        }
+
+        .options input[type="radio"] {
+            margin-right: 10px;
+            accent-color: var(--primary);
+        }
+        /* NEW STYLES FOR IMPROVED REGISTRATION PAGE */
+        .business-type-radio-label {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            background: var(--bg-light);
+            cursor: pointer;
+            width: 100%; /* Important for grid item */
+        }
+
+        .business-type-radio-label:hover {
+            border-color: var(--secondary);
+            background: var(--bg-dark);
+        }
+
+        .business-type-radio-label input[type="radio"] {
+            width: auto;
+            margin-right: 10px;
+            cursor: pointer;
+            accent-color: var(--primary);
+            appearance: radio; /* Ensure standard radio appearance */
+        }
+        
+        /* Highlight selected radio button container */
+        .business-type-radio-label input[type="radio"]:checked + span {
+            color: var(--primary); /* Optional: style the span text if one exists */
+        }
+        
+        .business-type-radio-label input[type="radio"]:checked {
+            border-color: var(--primary); /* Doesn't directly affect radio button in all browsers */
+        }
+        
+        /* Visually highlight the entire container when selected */
+        .business-type-radio-label.selected {
+            border-color: var(--primary);
+            background: var(--bg-dark);
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.5); /* Primary glow */
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #06B6D4;
+            --primary-dark: #0891B2;
+            --secondary: #64748b;
+            --success: #10b981;
+            --error: #ef4444;
+            --warning: #f59e0b;
+            --bg-light: #111827;
+            --bg-dark: #0f172a;
+            --text-light: #F3F4F6;
+            --text-dark: #f1f5f9;
+            --border: #374151;
+            --card-bg: #1F2937;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #111827;
+            min-height: 100vh;
+            color: var(--text-light);
+            line-height: 1.6;
+            /* Added padding for fixed header and footer */
+            padding-top: 60px; /* Height of the header */
+            padding-bottom: 50px; /* Height of the footer */
+        }
+
+        /* NEW HEADER STYLE */
+        .app-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: var(--bg-dark);
+            border-bottom: 1px solid var(--border);
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: var(--shadow);
+            z-index: 900;
+        }
+
+        /* NEW FOOTER STYLE */
+        .app-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: var(--bg-dark);
+            border-top: 1px solid var(--border);
+            color: var(--secondary);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 900;
+            text-align: center;
+        }
+
+        .container {
+            /* Removed max-width and margin: 0 auto; for full width */
+            width: 100%; 
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 24px;
+            animation: fadeIn 0.5s ease-in;
+            border: 1px solid var(--border);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .header h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: var(--secondary);
+            font-size: 0.95rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            background: var(--bg-light);
+            color: var(--text-light);
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: var(--bg-dark);
+        }
+
+        input::placeholder {
+            color: #6B7280;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .btn-secondary:hover:not(:disabled) {
+            background: #475569;
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .alert {
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            display: none;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .alert-success {
+            background: #065f46;
+            color: #d1fae5;
+            border-left: 4px solid var(--success);
+        }
+
+        .alert-error {
+            background: #991b1b;
+            color: #fee2e2;
+            border-left: 4px solid var(--error);
+        }
+
+        .row {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .row-2 { grid-template-columns: 1fr 1fr; }
+            .row-3 { grid-template-columns: 1fr 1fr 1fr; }
+        }
+
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 32px 0;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-light);
+            margin-bottom: 16px;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            left: -300px;
+            top: 0;
+            width: 300px;
+            height: 100vh;
+            background: var(--card-bg);
+            border-right: 1px solid var(--border);
+            transition: left 0.3s ease;
+            z-index: 1000;
+            overflow-y: auto;
+            padding-top: 60px; /* To account for the fixed header */
+        }
+
+        .sidebar.active {
+            left: 0;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute; /* Keep close button fixed relative to sidebar top */
+            top: 0;
+            width: 100%;
+            background: var(--card-bg); /* Ensure background covers content */
+        }
+
+        .sidebar-header h3 {
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .close-sidebar {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0;
+            width: auto;
+        }
+
+        .sidebar-menu {
+            padding: 20px 0;
+            /* No need for extra padding here since it's handled by .sidebar padding-top */
+        }
+
+        .menu-item {
+            padding: 12px 20px;
+            color: var(--text-light);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: background 0.2s;
+            cursor: pointer;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        .menu-item:hover {
+            background: var(--bg-light);
+        }
+
+        .menu-icon {
+            font-size: 20px;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 999;
+        }
+
+        .overlay.active {
+            display: block;
+        }
+
+        .hamburger {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 8px;
+            width: auto;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            background: var(--bg-light);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .table th {
+            background: var(--bg-dark);
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table td {
+            padding: 12px;
+            border-top: 1px solid var(--border);
+            color: var(--text-light);
+        }
+
+        .table tr:hover {
+            background: var(--card-bg);
+        }
+
+        .file-upload {
+            border: 2px dashed var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: var(--bg-light);
+        }
+
+        .file-upload:hover {
+            border-color: var(--primary);
+            background: var(--bg-dark);
+        }
+
+        .file-upload input {
+            display: none;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin: 20px 0;
+            cursor: pointer;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            width: auto;
+            margin-top: 2px;
+            cursor: pointer;
+            accent-color: var(--primary);
+        }
+
+        .checkbox-container label {
+            cursor: pointer;
+            margin: 0;
+            color: var(--text-light);
+        }
+
+        .checkbox-container a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .checkbox-container a:hover {
+            color: var(--primary-dark);
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow: auto;
+        }
+
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            margin: auto;
+            padding: 32px;
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-header h2 {
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 28px;
+            cursor: pointer;
+            padding: 0;
+            width: auto;
+        }
+
+        /* Beautiful Order Cards */
+        .orders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .order-card {
+            background: linear-gradient(135deg, var(--card-bg) 0%, #1a2332 100%);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .order-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--success));
+        }
+
+        .order-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(6, 182, 212, 0.3);
+            border-color: var(--primary);
+        }
+
+        .order-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .order-id {
+            font-size: 0.75rem;
+            color: var(--secondary);
+            font-family: monospace;
+        }
+
+        .order-badge {
+            background: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .order-food {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .order-details {
+            display: grid;
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .detail-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .detail-icon {
+            font-size: 1.1rem;
+            min-width: 24px;
+            text-align: center;
+        }
+
+        .detail-label {
+            color: var(--secondary);
+            font-weight: 500;
+            min-width: 80px;
+        }
+
+        .detail-value {
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .order-price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--success);
+            margin: 16px 0;
+            text-align: center;
+            padding: 12px;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 8px;
+        }
+
+        .order-actions {
+            display: flex;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .btn-confirm {
+            flex: 1;
+            background: linear-gradient(135deg, var(--success), #059669);
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-confirm:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
+        }
+
+        .btn-call {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-call:hover {
+            background: var(--primary-dark);
+            transform: scale(1.05);
+        }
+
+        .empty-orders {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--secondary);
+        }
+
+        .empty-orders-icon {
+            font-size: 4rem;
+            margin-bottom: 16px;
+            opacity: 0.5;
+        }
+
+        .confirmed-badge {
+            background: var(--success);
+        }
+
+        /* The following is the original mobile query, cleaned up to remove the duplicated order styles. */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 50px; /* Reduced padding for smaller header on mobile */
+                padding-bottom: 50px;
+            }
+            
+            .app-header {
+                height: 50px;
+                font-size: 1.2rem;
+            }
+            
+            .sidebar {
+                padding-top: 50px; /* Adjust sidebar top padding */
+            }
+
+            .container {
+                padding: 12px;
+            }
+
+            .card {
+                padding: 20px;
+                border-radius: 12px;
+            }
+
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.1rem;
+            }
+
+            input, select, textarea {
+                font-size: 16px;
+            }
+
+            .modal-content {
+                width: 95%;
+                padding: 20px;
+            }
+            .orders-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 16px 0;
+            }
+
+            .orders-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            }
+
+            .orders-table thead {
+            background: var(--primary);
+            color: white;
+            }
+
+            .orders-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+            }
+
+            .orders-table tbody tr {
+            border-bottom: 1px solid var(--border);
+            transition: background 0.3s ease;
+            }
+
+            .orders-table tbody tr:hover {
+            background: rgba(6, 182, 212, 0.1);
+            }
+
+            .orders-table td {
+            padding: 12px 16px;
+            color: var(--text-light);
+            }
+
+            .orders-table td button {
+            padding: 8px 16px;
+            background-color: var(--success);
+            border: none;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            }
+
+            .orders-table td button:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+            }
+
+            .orders-table td button:active {
+            transform: translateY(0);
+            }
+
+            #ordersTableContainer {
+            overflow-x: auto;
+            }
+
+            /* Empty state */
+            .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: var(--secondary);
+            }
+            
+            /* Responsive: Ensure a single column on small screens for the beautiful grid */
+            .orders-grid {
+                grid-template-columns: 1fr;
+            }
+        }
