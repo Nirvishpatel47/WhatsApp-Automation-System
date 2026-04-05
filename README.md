@@ -7,6 +7,7 @@ A multi-tenant, production-grade WhatsApp chatbot backend powered by **Google Ge
 ## 📋 Table of Contents
 
 - [Overview](#overview)
+- [The Problem It Solves](#The Problem It Solves)
 - [Features](#features)
 - [Architecture](#architecture)
 - [Project Structure](#project-structure)
@@ -30,6 +31,22 @@ A multi-tenant, production-grade WhatsApp chatbot backend powered by **Google Ge
 This platform allows businesses (gyms, restaurants, bakeries, etc.) to register and deploy their own WhatsApp AI chatbot — without writing any AI code. Each business uploads a knowledge document (menu, policies, FAQs), and the RAG system answers their customers' questions automatically via WhatsApp.
 
 The platform supports multiple concurrent business clients, each with their own isolated data, conversation history, and bot configuration.
+
+---
+
+## The Problem It Solves
+For local businesses like **Bakeries, Restaurants, and Gyms**, high-commission delivery platforms (like Zomato or Swiggy) consume **30-40%** of every transaction. This makes it difficult for small to medium-sized businesses to maintain healthy margins while offering online ordering.
+
+### The Solution
+This system eliminates the middleman by enabling direct customer-to-business commerce via WhatsApp.
+
+* **Zero Commission:** Businesses retain 100% of their revenue by moving the ordering process from high-fee third-party apps directly to their own WhatsApp backend.
+* **Automated Interaction:** Specifically designed handlers for different niches:
+    * **Restaurants & Bakeries:** Automated menu browsing, order taking, and inquiry handling.
+    * **Gyms:** Membership management and automated responses for fitness-related inquiries.
+* **RAG-Powered Intelligence:** Uses Retrieval-Augmented Generation (RAG) to provide accurate, business-specific information to customers instantly.
+* **Enterprise-Grade Backend:** Features a robust FastAPI structure with integrated Firebase for data persistence, rate limiting to prevent spam, and secure JWT-based authentication for administrative tasks.
+* **Seamless User Experience:** Customers can order items, ask questions, and interact with the brand in the app they already use daily—WhatsApp—without downloading additional software.
 
 ---
 
