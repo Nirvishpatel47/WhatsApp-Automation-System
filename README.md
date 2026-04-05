@@ -7,7 +7,7 @@ A multi-tenant, production-grade WhatsApp chatbot backend powered by **Google Ge
 ## 📋 Table of Contents
 
 - [Overview](#overview)
-- [The Problem It Solves](#theproblemitsolves)
+- [The Problem It Solves](#the-problem-it-solves)
 - [Features](#features)
 - [Architecture](#architecture)
 - [Project Structure](#project-structure)
