@@ -7,7 +7,7 @@ A multi-tenant, production-grade WhatsApp chatbot backend powered by **Google Ge
 ## 📋 Table of Contents
 
 - [Overview](#overview)
-- [The Problem It Solves](#The Problem It Solves)
+- [The Problem It Solves](#theproblemitsolves)
 - [Features](#features)
 - [Architecture](#architecture)
 - [Project Structure](#project-structure)
@@ -35,7 +35,7 @@ The platform supports multiple concurrent business clients, each with their own 
 ---
 
 ## The Problem It Solves
-For local businesses like **Bakeries, Restaurants, and Gyms**, high-commission delivery platforms (like Zomato or Swiggy) consume **30-40%** of every transaction. This makes it difficult for small to medium-sized businesses to maintain healthy margins while offering online ordering.
+For local businesses like **Bakeries, and Restaurants**, high-commission delivery platforms (like Zomato or Swiggy) consume **30-40%** of every transaction. This makes it difficult for small to medium-sized businesses to maintain healthy margins while offering online ordering.
 
 ### The Solution
 This system eliminates the middleman by enabling direct customer-to-business commerce via WhatsApp.
